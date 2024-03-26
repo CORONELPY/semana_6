@@ -10,16 +10,16 @@ def ingresar_comentarios():
         point = input()
         if point.isdecimal():
             point = int(point)
-            if  point <= 0 or point > 5: # Expresión condicional que es menor que 0 o mayor que 5
+            if  point <= 0 or point > 5:
                 print( 'Indíquelo en una escala de 1 a 5' )
                 point = input()
             else:
                 print( 'Introduzca sus comentarios.' )
                 comment = input()
                 post = f'punto: {point} comentario: {comment}'
-                file_pc = open("data.txt", 'a')
-                file_pc.write( f'{ post } \n' )
-                file_pc.close()
+                file_pc = open("data.txt", 'a'
+                file_pc.write(f'{post}\n')
+                     file_pc.close()
                 break
         else:
             print('Por favor ingrese el punto de evaluación como un número')
